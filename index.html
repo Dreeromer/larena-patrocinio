@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Tu Marca Larena League · Propuesta de patrocinio">
+<meta property="og:image" content="img/cancha-tv.jpg">
+<title>Tu Marca Larena League · Propuesta de patrocinio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Mango';src:url(fonts/MangoGrotesque-Black.otf)}
+  @font-face{font-family:'Bebas';src:url(fonts/BebasNeue-Regular.ttf)}
+  :root{
+    --bg:#0B100F; --panel:#121A18; --line:rgba(231,236,231,.12);
+    --tx:#E9EEE9; --dim:#8E9C95; --acc:#94C14A; --acc2:#4DA33C;
+    --marca:#FF5A1F; --azul:#1E47C8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#050707}
+  body{font-family:'Barlow',system-ui,sans-serif;color:var(--tx);-webkit-font-smoothing:antialiased}
+  .deck{display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0;overflow-x:hidden}
+  @media (max-width:700px){.deck{gap:12px;padding:12px 0}}
+  .s{width:1920px;height:1080px;position:relative;overflow:hidden;background:var(--bg);flex:0 0 auto;transform-origin:top left}
+  .wrapS{position:relative;overflow:hidden}
+  .pad{position:absolute;inset:0;padding:110px 130px}
+  .kick{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:24px;color:var(--acc)}
+  h1,h2{font-family:'Mango';font-weight:400;line-height:.86;letter-spacing:.005em;text-transform:uppercase}
+  h2{font-size:150px;margin-top:22px}
+  p.lead{font-size:34px;line-height:1.35;color:#C9D2CD;max-width:1050px;margin-top:34px}
+  .tm{color:var(--marca)}
+  .g{color:var(--acc)}
+  .foot{position:absolute;left:130px;right:130px;bottom:56px;display:flex;justify-content:space-between;align-items:center;font-family:'Barlow Condensed';letter-spacing:.24em;text-transform:uppercase;font-size:19px;color:var(--dim)}
+  .foot img{height:44px}
+  .num{font-family:'Bebas';font-size:20px;letter-spacing:.2em}
+
+  /* ---------- 1 portada ---------- */
+  .cover .bgimg{position:absolute;inset:0;background:center/cover no-repeat;filter:saturate(1.05)}
+  .cover .bgimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,8,.94) 0%,rgba(5,8,8,.78) 42%,rgba(5,8,8,.1) 75%),linear-gradient(0deg,rgba(5,8,8,.85),transparent 40%)}
+  .cover h1{font-size:250px;margin-top:40px}
+  .cover h1 .l2{display:block;color:#fff}
+  .cover .sub{font-family:'Barlow Condensed';font-weight:600;font-size:40px;letter-spacing:.06em;color:#C9D2CD;margin-top:34px}
+  .cover .logo{height:92px}
+
+  /* ---------- 2 historia ---------- */
+  .hist{display:grid;grid-template-columns:1fr 640px;height:100%}
+  .hist .txt{padding:110px 70px 110px 130px;position:relative}
+  .hist .ph{background:center/cover no-repeat;position:relative}
+  .hist .ph span{position:absolute;left:26px;bottom:26px;font-family:'Barlow Condensed';letter-spacing:.2em;text-transform:uppercase;font-size:18px;background:rgba(0,0,0,.6);padding:8px 14px;border-radius:6px}
+  .ed{margin-top:110px;display:flex;flex-direction:column;gap:28px}
+  .ed div{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:34px 34px;display:flex;align-items:baseline;gap:26px}
+  .ed b{font-family:'Bebas';font-weight:400;font-size:28px;letter-spacing:.18em;color:var(--dim);min-width:150px}
+  .ed i{font-style:normal;font-family:'Mango';font-size:84px;text-transform:uppercase;line-height:.9}
+  .ed i em{font-style:normal;color:var(--acc)}
+  .marcas{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .marcas div{border-left:3px solid var(--acc);padding:6px 0 6px 18px}
+  .marcas b{display:block;font-family:'Barlow Condensed';font-size:34px;font-weight:700;letter-spacing:.03em}
+  .marcas small{font-size:21px;color:var(--dim)}
+
+  /* ---------- 3 números ---------- */
+  .big{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:130px;border-top:1px solid var(--line)}
+  .big div{padding:46px 40px 0 0}
+  .big div+div{padding-left:44px;border-left:1px solid var(--line)}
+  .big b{display:block;font-family:'Mango';font-weight:400;font-size:250px;line-height:.8;color:#fff}
+  .big b sup{font-size:.4em;vertical-align:top;color:var(--acc);margin-left:6px}
+  .big span{display:block;font-family:'Barlow Condensed';font-size:34px;font-weight:600;margin-top:20px;letter-spacing:.02em}
+  .big small{display:block;font-size:23px;color:var(--dim);margin-top:10px;line-height:1.4}
+  .ciud{display:flex;gap:14px;margin-top:110px;flex-wrap:wrap}
+  .ciud span{font-family:'Bebas';font-size:40px;letter-spacing:.1em;padding:10px 26px;border:1px solid var(--line);border-radius:100px;background:var(--panel)}
+  .ciud span.o{color:var(--dim)}
+
+  /* ---------- 4 dos caminos ---------- */
+  .dos{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:64px}
+  .op{border:1px solid var(--line);background:var(--panel);border-radius:22px;padding:50px 52px 140px;position:relative;min-height:600px}
+  .op .l{font-family:'Mango';font-size:150px;line-height:.8;color:var(--acc);position:absolute;right:46px;top:40px;opacity:.9}
+  .op h3{font-family:'Mango';font-weight:400;font-size:86px;text-transform:uppercase;line-height:.9;max-width:600px}
+  .op .t{font-family:'Barlow Condensed';letter-spacing:.24em;text-transform:uppercase;font-size:22px;color:var(--dim);margin-bottom:22px}
+  .op ul{list-style:none;margin-top:34px;display:flex;flex-direction:column;gap:16px}
+  .op li{font-size:28px;line-height:1.3;padding-left:34px;position:relative;color:#D3DBD6}
+  .op li::before{content:"";position:absolute;left:0;top:13px;width:16px;height:3px;background:var(--acc)}
+  .op .key{position:absolute;left:52px;right:52px;bottom:44px;font-family:'Barlow Condensed';font-size:30px;font-weight:600;color:#fff;border-top:1px solid var(--line);padding-top:24px}
+
+  /* ---------- 5 cancha ---------- */
+  .full{position:absolute;inset:0;background:center/cover no-repeat}
+  .full::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,8,8,.92) 0%,rgba(5,8,8,.2) 38%,transparent 60%),linear-gradient(180deg,rgba(5,8,8,.75),transparent 26%)}
+  .ovtxt{position:absolute;left:130px;right:130px;top:90px;z-index:2}
+  .ovtxt h2{font-size:120px}
+  .tags{position:absolute;z-index:3;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:21px}
+  .tag{position:absolute;white-space:nowrap;display:flex;align-items:center;gap:12px}
+  .tag i{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px rgba(148,193,74,.25);flex:0 0 auto}
+  .tag span{background:rgba(5,8,8,.82);border:1px solid var(--line);padding:9px 16px;border-radius:8px}
+  .bottomnote{position:absolute;left:130px;right:130px;bottom:70px;z-index:2;display:flex;gap:60px;align-items:flex-end}
+  .bottomnote p{font-size:30px;line-height:1.35;color:#D3DBD6;max-width:900px}
+
+  .duo{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;margin-top:46px;height:610px}
+  .duo figure{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:center/cover no-repeat}
+  .duo figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 30px 26px;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);font-size:25px;line-height:1.35;color:#E3E9E5}
+  .duo figcaption b{display:block;font-family:'Barlow Condensed';font-size:22px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+  .duo .col{display:grid;grid-template-rows:1fr 1fr;gap:26px}
+
+  /* ---------- 6 transmisión ---------- */
+  .tv{position:absolute;left:130px;top:300px;width:1180px;height:664px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.6);background:center/cover no-repeat}
+  .tvside{position:absolute;left:1370px;right:120px;top:300px}
+  .tvside .st{border-top:1px solid var(--line);padding:22px 0}
+  .tvside b{display:block;font-family:'Barlow Condensed';font-size:31px;font-weight:700;line-height:1.15}
+  .tvside small{display:block;font-size:22px;color:var(--dim);margin-top:6px;line-height:1.35}
+  /* overlay calcado del marcador real de Larena (Larena-Overlay) */
+  .ov{position:absolute;left:26px;top:24px;font-size:10px;display:flex;flex-direction:column;gap:9px;align-items:flex-start}
+  .board{display:flex;background:rgba(13,21,19,.86);backdrop-filter:blur(10px);border:1px solid rgba(231,236,231,.14);border-radius:7px;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+  .board .lg{width:58px;display:grid;place-items:center;background:linear-gradient(160deg,#1A2622,#0D1513);border-right:1px solid rgba(231,236,231,.14)}
+  .board .lg img{width:38px}
+  .board .meta{display:flex;gap:7px;align-items:center;padding:4px 10px;background:rgba(0,0,0,.32);border-bottom:1px solid rgba(231,236,231,.14);font-family:'Barlow Condensed';font-weight:600;letter-spacing:.16em;font-size:10px;color:#8C9A93;text-transform:uppercase;white-space:nowrap}
+  .board .meta .live{color:#ff5a5a}
+  .board .meta .live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#ff5a5a;margin-right:5px;vertical-align:1px;animation:blink 1.4s infinite}
+  .board .meta .pr{border-left:1px solid rgba(231,236,231,.2);padding-left:8px}
+  .board .meta .pr b{color:var(--marca)}
+  .row{display:flex;align-items:center;font-family:'Barlow Condensed';font-weight:700;font-size:17px;letter-spacing:.03em;border-bottom:1px solid rgba(231,236,231,.08)}
+  .row .n{padding:6px 12px;min-width:250px;text-transform:uppercase;border-left:3px solid var(--acc)}
+  .row.b .n{border-left-color:#FFB020}
+  .row .c{width:30px;text-align:center;color:#C9D2CD;border-left:1px solid rgba(231,236,231,.1);padding:6px 0}
+  .row .p{width:40px;text-align:center;background:#55A84A;color:#fff;padding:6px 0}
+  .row.b .p{background:#E0963A}
+  .bug{display:flex;align-items:stretch;background:rgba(13,21,19,.9);border:1px solid rgba(231,236,231,.14);border-radius:7px;overflow:hidden;animation:bug 9s cubic-bezier(.2,.8,.25,1) infinite}
+  .bug .et{writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Barlow Condensed';font-size:8px;letter-spacing:.24em;color:#8C9A93;padding:6px 4px;border-right:1px solid rgba(231,236,231,.14);text-transform:uppercase}
+  .bug .mk{padding:8px 16px;display:flex;align-items:center}
+  .bug .mk span{font-family:'Mango';font-size:30px;color:#fff;background:var(--marca);padding:3px 12px 0;border-radius:4px;line-height:1}
+  .bump{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;animation:bumpbg 9s infinite}
+  .bump .bar{position:absolute;left:0;right:0;top:50%;height:150px;margin-top:-75px;background:var(--marca);transform:scaleX(0);transform-origin:left;animation:bar 9s cubic-bezier(.7,0,.2,1) infinite}
+  .bump .w{position:relative;font-family:'Mango';color:#fff;font-size:120px;line-height:1;opacity:0;animation:word 9s infinite;text-align:center}
+  .bump .w small{display:block;font-family:'Barlow Condensed';font-weight:700;font-size:20px;letter-spacing:.4em}
+  @keyframes blink{50%{opacity:.25}}
+  @keyframes bug{0%,6%{opacity:0;transform:translateX(-30px)}11%,60%{opacity:1;transform:none}66%,100%{opacity:0;transform:translateX(-30px)}}
+  @keyframes bar{0%,68%{transform:scaleX(0);transform-origin:left}74%,88%{transform:scaleX(1);transform-origin:left}88.01%{transform-origin:right}95%,100%{transform:scaleX(0);transform-origin:right}}
+  @keyframes word{0%,72%{opacity:0;transform:translateY(16px)}76%,87%{opacity:1;transform:none}91%,100%{opacity:0}}
+  @keyframes bumpbg{0%,70%{background:transparent}76%,88%{background:rgba(5,8,8,.35)}94%,100%{background:transparent}}
+  @media (prefers-reduced-motion:reduce){.bug,.bar,.w,.bump,.live::before{animation:none!important}}
+
+  /* ---------- 7 polo ---------- */
+  .pimg{position:absolute;top:380px;height:520px}
+  .pcap{position:absolute;top:925px;width:575px;text-align:center;font-family:'Bebas';font-size:32px;letter-spacing:.3em;color:var(--dim)}
+  .call{position:absolute;font-family:'Barlow Condensed';font-weight:700;font-size:25px;line-height:1.05;letter-spacing:.08em;text-transform:uppercase;color:#fff;width:var(--w);transform:translateY(-50%);display:flex;align-items:center;gap:14px}
+  .call::after{content:"";flex:1;height:2px;background:var(--acc);min-width:30px}
+  .call::before{content:"";order:3;width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 5px rgba(148,193,74,.25);flex:0 0 auto}
+  .call.r{flex-direction:row-reverse;text-align:right}
+  .call.top{flex-direction:column;width:auto;transform:translate(-50%,-100%);gap:8px;text-transform:none;font-size:27px;letter-spacing:.02em}
+  .call.top::after{flex:0 0 70px;width:2px;height:70px;min-width:0}
+  .call.top::before{order:3}
+  .polohead{position:absolute;left:130px;top:90px;right:130px;display:flex;justify-content:space-between;align-items:flex-end}
+  .polohead h2{font-size:120px}
+  .polohead p{font-size:28px;color:#C9D2CD;max-width:620px;line-height:1.35;text-align:right}
+
+  /* ---------- 8 alcance ---------- */
+  .alc{display:grid;grid-template-columns:560px 1fr;gap:80px;margin-top:56px}
+  .tot b{display:block;font-family:'Mango';font-weight:400;font-size:230px;line-height:.8;white-space:nowrap}
+  .tot span{display:block;font-family:'Barlow Condensed';font-size:40px;font-weight:700;margin-top:20px}
+  .tot small{display:block;font-size:24px;color:var(--dim);margin-top:12px;line-height:1.4}
+  .tot .pres{margin-top:46px;border-top:1px solid var(--line);padding-top:30px}
+  .tot .pres b{font-size:150px;color:var(--acc)}
+  .tbl{width:100%;border-collapse:collapse}
+  .tbl td{padding:22px 0;border-bottom:1px solid var(--line);font-size:26px;vertical-align:top}
+  .tbl td:first-child{font-family:'Barlow Condensed';font-weight:700;font-size:31px;width:44%}
+  .tbl td.c{color:var(--dim);font-size:22px;line-height:1.4}
+  .tbl td.v{text-align:right;font-family:'Bebas';font-size:58px;line-height:.9;white-space:nowrap;width:22%}
+  .nota{font-size:20px;color:var(--dim);margin-top:24px;line-height:1.45}
+
+  /* ---------- 9 incluye ---------- */
+  .inc{display:grid;grid-template-columns:1fr 520px;gap:80px;margin-top:50px}
+  .inc ol{list-style:none;counter-reset:k;display:grid;grid-template-columns:1fr 1fr;gap:26px 50px}
+  .inc li{counter-increment:k;position:relative;padding-left:70px;font-size:26px;line-height:1.35;color:#D3DBD6}
+  .inc li b{display:block;font-family:'Barlow Condensed';font-size:32px;color:#fff;margin-bottom:4px}
+  .inc li::before{content:counter(k,decimal-leading-zero);position:absolute;left:0;top:2px;font-family:'Bebas';font-size:40px;color:var(--acc)}
+  .precio{border:1px solid rgba(148,193,74,.4);background:linear-gradient(160deg,#16211d,#0e1513);border-radius:22px;padding:50px;align-self:start}
+  .precio .t{font-family:'Barlow Condensed';letter-spacing:.24em;text-transform:uppercase;font-size:22px;color:var(--acc)}
+  .precio b{display:block;font-family:'Mango';font-weight:400;font-size:190px;line-height:.85;margin-top:20px}
+  .precio b sup{font-size:.36em;vertical-align:top;margin-right:8px;color:var(--dim)}
+  .precio p{font-size:24px;color:#C9D2CD;line-height:1.4;margin-top:22px}
+  .precio .cmp{margin-top:28px;border-top:1px solid var(--line);padding-top:24px;font-size:22px;color:var(--dim);line-height:1.45}
+  .precio .cmp b{display:inline;font-family:'Barlow Condensed';font-size:26px;color:#fff;margin:0}
+
+  /* ---------- 10 otras formas ---------- */
+  .tres{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:70px}
+  .tres div{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:50px 46px;min-height:560px;display:flex;flex-direction:column}
+  .tres small{margin-top:auto!important}
+  .tres b{display:block;font-family:'Mango';font-weight:400;font-size:96px;text-transform:uppercase;line-height:.9}
+  .tres p{font-size:30px;line-height:1.4;color:#C9D2CD;margin-top:24px}
+  .tres small{display:block;margin-top:26px;font-family:'Barlow Condensed';letter-spacing:.18em;text-transform:uppercase;font-size:20px;color:var(--acc)}
+
+  /* ---------- 11 cierre ---------- */
+  .close h1{font-size:220px;margin-top:30px}
+  .close .cta{display:flex;gap:28px;margin-top:70px}
+  .close .cta div{border:1px solid var(--line);background:rgba(18,26,24,.85);border-radius:18px;padding:30px 40px}
+  .close .cta b{display:block;font-family:'Barlow Condensed';font-size:36px}
+  .close .cta small{font-size:22px;color:var(--dim)}
+
+
+  /* ---------- barra y modo presentación ---------- */
+  .bar{position:fixed;right:18px;bottom:18px;z-index:50;display:flex;gap:10px}
+  .bar a,.bar button{font:600 15px 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#E9EEE9;background:rgba(18,26,24,.92);border:1px solid rgba(231,236,231,.18);border-radius:100px;padding:12px 20px;cursor:pointer;text-decoration:none}
+  .bar button.on{background:#94C14A;color:#0B100F;border-color:#94C14A}
+  body.pres{overflow:hidden;background:#000}
+  body.pres .deck{padding:0;gap:0;display:block}
+  body.pres .wrapS{position:fixed;inset:0;width:auto!important;height:auto!important;display:none}
+  body.pres .wrapS.cur{display:block}
+  body.pres .s{position:absolute;left:50%;top:50%}
+  body.pres .bar{opacity:.0;transition:opacity .3s}
+  body.pres .bar:hover{opacity:1}
+  .cnt{position:fixed;left:18px;bottom:22px;z-index:50;font:600 14px 'Barlow Condensed',sans-serif;letter-spacing:.2em;color:#8E9C95;display:none}
+  body.pres .cnt{display:block}
+  @media print{.bar,.cnt{display:none!important}}
+  @media print{
+    @page{size:1920px 1080px;margin:0}
+    html,body{background:var(--bg)}
+    .deck{padding:0;gap:0;display:block}
+    .wrapS{width:1920px!important;height:1080px!important}
+    .s{transform:none!important;page-break-after:always;break-after:page}
+    .bug{animation:none;opacity:1}
+    .bump,.bump *{animation:none!important;opacity:0}
+    .board .meta .live::before{animation:none}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- 1 PORTADA -->
+<section class="s cover">
+  <div class="bgimg" style="background-image:url(img/cancha-tv.jpg)"></div>
+  <div class="pad">
+    <img class="logo" src="img/larena-logo-blanco.png" alt="Larena Club">
+    <h1><span class="tm">Tu Marca</span><span class="l2">Larena League</span></h1>
+    <div class="sub">Propuesta de patrocinio · el torneo de pádel más grande del norte</div>
+  </div>
+  <div class="foot"><span>Larena Club · Pimentel, Chiclayo</span><span class="num">2026</span></div>
+</section>
+
+<!-- 2 YA LO HICIERON -->
+<section class="s">
+  <div class="hist">
+    <div class="txt">
+      <div class="kick">Dos ediciones, dos marcas con nombre propio</div>
+      <h2 style="font-size:132px">El torneo lleva<br>el nombre de<br><span class="g">quien lo hace posible</span></h2>
+      <div class="ed">
+        <div><b>Edición 1</b><i><em>Flor de Caña</em> Open Larena League</i></div>
+        <div><b>Edición 2</b><i><em>Toyota Nor Autos</em> Larena League</i></div>
+      </div>
+    </div>
+    <div class="ph" style="background-image:url(img/toyota-arco.jpg)"><span>Toyota Nor Autos Larena League</span></div>
+  </div>
+</section>
+
+<!-- 3 NÚMEROS -->
+<section class="s">
+  <div class="pad">
+    <div class="kick">El torneo en cifras</div>
+    <h2>Una audiencia que viaja para competir</h2>
+    <div class="big">
+      <div><b>120<sup>+</sup></b><span>jugadores inscritos</span><small>en la última edición, por categorías</small></div>
+      <div><b>5<sup>+</sup></b><span>ciudades del país</span><small>gente que viaja a Pimentel solo para jugar</small></div>
+      <div><b>3</b><span>canchas panorámicas</span><small>con transmisión en vivo de los partidos</small></div>
+    </div>
+    <div class="ciud"><span>Lima</span><span>Piura</span><span>Trujillo</span><span>Arequipa</span><span>Chiclayo</span><span class="o">y otras</span></div>
+  </div>
+  <div class="foot"><img src="img/larena-logo-blanco.png" alt=""><span class="num">03</span></div>
+</section>
+
+<!-- 4 DOS FORMAS -->
+<section class="s">
+  <div class="pad">
+    <div class="kick">Dos formas de entrar</div>
+    <h2 style="font-size:130px">Tu marca, en la cancha o en el nombre</h2>
+    <div class="dos">
+      <div class="op">
+        <div class="l">A</div>
+        <div class="t">Todo el año</div>
+        <h3>Una cancha con tu marca</h3>
+        <ul>
+          <li>Cabeceras de fondo y laterales, faldones y faja de la red</li>
+          <li>La ven todos los que juegan y pasan por el club, todos los días</li>
+          <li>Es la cancha que sale en las transmisiones</li>
+        </ul>
+        <div class="key">Exposición permanente, torneo tras torneo</div>
+      </div>
+      <div class="op">
+        <div class="l">B</div>
+        <div class="t">Un torneo</div>
+        <h3>El torneo con tu nombre</h3>
+        <ul>
+          <li>El torneo se llama <b class="tm">Tu Marca</b> Larena League</li>
+          <li>Tu logo animado en cada transmisión</li>
+          <li>Tu logo grande en el polo de los 120 jugadores</li>
+        </ul>
+        <div class="key">Lo que hicieron Flor de Caña y Toyota</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 OPCIÓN A: CANCHA -->
+<section class="s">
+  <div class="full" style="background-image:url(img/cancha-tv.jpg)"></div>
+  <div class="ovtxt">
+    <div class="kick">Opción A · Cancha con tu marca</div>
+    <h2>Así la ve la cámara</h2>
+  </div>
+  <div class="tags">
+    <div class="tag" style="left:690px;top:300px"><i></i><span>Cabecera de fondo</span></div>
+    <div class="tag" style="left:1560px;top:250px"><i></i><span>Cabeceras laterales</span></div>
+    <div class="tag" style="left:1180px;top:540px"><i></i><span>Faja de la red</span></div>
+  </div>
+  <div class="bottomnote">
+    <p>Encuadre de la cámara de transmisión de Larena: el fondo y las cabeceras quedan en pantalla todo el partido. La cancha de tu marca es la que se transmite.</p>
+  </div>
+</section>
+
+<!-- 5b OPCIÓN A: POR FUERA -->
+<section class="s">
+  <div class="pad">
+    <div class="kick">Opción A · Cancha con tu marca</div>
+    <h2 style="font-size:120px">Arriba se ve desde dentro. Abajo, desde afuera</h2>
+    <div class="duo">
+      <figure style="background-image:url(img/cancha-fuera.jpg)">
+        <figcaption><b>Faldón inferior</b>Va impreso por fuera: lo lee la gente que camina por el club, espera turno o mira el partido. Desde dentro de la cancha se ve blanco, así no distrae al jugador.</figcaption>
+      </figure>
+      <div class="col">
+        <figure style="background-image:url(img/cancha-aerea.jpg)">
+          <figcaption><b>Cabeceras</b>Fondos y laterales, sobre la malla: se ven desde dentro, desde afuera y en cámara.</figcaption>
+        </figure>
+        <figure style="background-image:url(img/cancha-real.jpg);background-position:center 40%">
+          <figcaption><b>Hoy, en Larena</b>Las lonas de las cabeceras ya funcionan así en el club.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 OPCIÓN B: TRANSMISIÓN -->
+<section class="s">
+  <div class="pad" style="padding-bottom:0">
+    <div class="kick">Opción B · El torneo con tu nombre</div>
+    <h2 style="font-size:120px">Tu logo, animado en cada transmisión</h2>
+  </div>
+  <div class="tv" style="background-image:url(img/cancha-tv.jpg)">
+    <div class="ov">
+      <div class="board">
+        <div class="lg"><img src="img/larena-isotipo.png" alt=""></div>
+        <div>
+          <div class="meta"><span class="live">En vivo</span><span style="color:#94C14A">Larena Club</span><span>· Cancha 1 · Final 4ta</span><span class="pr">Presenta <b>Tu Marca</b></span></div>
+          <div class="row a"><span class="n">Bellido / Chumpitaz</span><span class="c">6</span><span class="c">3</span><span class="p">40</span></div>
+          <div class="row b"><span class="n">Salazar / Rioja</span><span class="c">4</span><span class="c">2</span><span class="p">15</span></div>
+        </div>
+      </div>
+      <div class="bug"><div class="et">Presenta</div><div class="mk"><span>TU MARCA</span></div></div>
+    </div>
+    <div class="bump"><div class="bar"></div><div class="w"><small>Larena League</small>TU MARCA</div></div>
+  </div>
+  <div class="tvside">
+    <div class="st"><b>En el marcador</b><small>"Presenta Tu Marca" fijo junto al resultado, todo el partido.</small></div>
+    <div class="st"><b>Entrada animada</b><small>Tu logo entra al inicio de cada partido y vuelve cada pocos minutos.</small></div>
+    <div class="st"><b>Cortinilla</b><small>Tu marca a pantalla completa entre sets y en los cambios de lado.</small></div>
+    <div class="st"><b>Overlay real</b><small>Es el mismo marcador que ya usa Larena en sus transmisiones.</small></div>
+  </div>
+</section>
+
+<!-- 7 POLO -->
+<section class="s">
+  <div class="polohead">
+    <div><div class="kick">Kit de bienvenida · polo oficial</div><h2>120 jugadores con tu marca</h2></div>
+    <p>Polo negro dry-fit sublimado, con paneles de malla y estampado en relieve, que recibe cada inscrito. Se usa en el torneo, en el podio y después, en cada partido.</p>
+  </div>
+  <img class="pimg" src="img/polo-frente.png" alt="Polo, frente" style="left:360px">
+  <img class="pimg" src="img/polo-espalda.png" alt="Polo, espalda" style="left:985px">
+  <div class="pcap" style="left:360px">Frente</div>
+  <div class="pcap" style="left:985px">Espalda</div>
+  <div class="call top" style="left:731px;top:484px">adidas</div>
+  <div class="call" style="left:130px;top:473px;--w:407px">Nombre<br>del torneo</div>
+  <div class="call" style="left:130px;top:600px;--w:398px">Tu logo, grande<br>al centro</div>
+  <div class="call r" style="right:110px;top:512px;--w:367px">Nombre de<br>cada jugador</div>
+  <div class="call r" style="right:110px;top:686px;--w:456px">Tu marca, primera</div>
+  <div class="call r" style="right:110px;top:768px;--w:401px">Auspiciadores</div>
+</section>
+
+<!-- 8 ALCANCE -->
+<section class="s">
+  <div class="pad">
+    <div class="kick">Alcance estimado del torneo</div>
+    <h2 style="font-size:130px">A cuánta gente le llega</h2>
+    <div class="alc">
+      <div class="tot">
+        <b>≈70 mil</b>
+        <span>impresiones digitales</span>
+        <small>rango razonable: 50 a 90 mil, según cuántos partidos se transmitan</small>
+        <div class="pres"><b>≈450</b><span>personas en el club</span><small>jugadores, acompañantes y público durante el torneo</small></div>
+      </div>
+      <div>
+        <table class="tbl">
+          <tr><td>En el club</td><td class="c">120 jugadores + 1 acompañante promedio + ~200 visitas</td><td class="v">≈450</td></tr>
+          <tr><td>Transmisiones en vivo</td><td class="c">~20 partidos × ~250 vistas (en vivo + repetición)</td><td class="v">≈5,000</td></tr>
+          <tr><td>Historias de los jugadores</td><td class="c">120 jugadores × 2 historias × ~150 vistas. Llegan a sus seguidores de Lima, Piura, Trujillo, Arequipa</td><td class="v">≈36,000</td></tr>
+          <tr><td>Contenido de Larena</td><td class="c">~20 piezas del torneo (afiches, reels, historias, resultados) × ~1,500 vistas</td><td class="v">≈30,000</td></tr>
+        </table>
+        <p class="nota">Estimación con supuestos explícitos: no hay cifras públicas de audiencia de torneos amateurs en el Perú. Se reemplaza con las estadísticas de Instagram de la edición Toyota Nor Autos antes de la reunión.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 QUÉ INCLUYE -->
+<section class="s">
+  <div class="pad">
+    <div class="kick">Opción B · Naming del torneo</div>
+    <h2 style="font-size:130px">Qué incluye</h2>
+    <div class="inc">
+      <ol>
+        <li><b>El nombre del torneo</b>Empieza con tu marca: "Tu Marca Larena League"</li>
+        <li><b>Transmisiones</b>Logo animado, marcador presentado por y cortinillas</li>
+        <li><b>Polo oficial</b>Tu logo grande al frente y primero en la espalda</li>
+        <li><b>Toda la comunicación</b>Afiches, reels, historias y resultados con tu nombre</li>
+        <li><b>Presencia en el club</b>Arco de entrada y lonas durante el torneo</li>
+        <li><b>Activación</b>Espacio para tu stand, producto o degustación</li>
+        <li><b>Premiación</b>Entrega de trofeos y foto de podio con tu marca</li>
+        <li><b>Contenido para ti</b>Fotos y clips del torneo para tus redes</li>
+      </ol>
+      <div class="precio">
+        <div class="t">Inversión</div>
+        <b><sup>S/</sup>4,500</b>
+        <p>Titularidad del torneo y paquete de visibilidad del evento.</p>
+        <div class="cmp">La intervención gráfica permanente de superficies de juego se presupuesta de manera independiente, conforme a alcance y temporada.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 OTRAS FORMAS -->
+<section class="s">
+  <div class="pad">
+    <div class="kick">También se puede sumar así</div>
+    <h2 style="font-size:130px">Cada marca encuentra su lugar</h2>
+    <div class="tres">
+      <div><b>Stand de venta</b><p>Vendes directo a 450 personas durante el fin de semana.</p></div>
+      <div><b>Producto y degustación</b><p>Tu producto en la mano del jugador entre partidos.</p></div>
+      <div><b>Mobiliario y marca</b><p>Sombrillas, mesas, hieleras y lonas con tu marca en las zonas de descanso.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 CIERRE -->
+<section class="s cover close">
+  <div class="bgimg" style="background-image:url(img/cancha-aerea.jpg)"></div>
+  <div class="pad">
+    <img class="logo" src="img/larena-logo-blanco.png" alt="Larena Club">
+    <h1>La próxima<br>edición lleva<br><span class="tm">tu nombre</span></h1>
+    <div class="cta">
+      <div><b>Larena Club</b><small>Pimentel, Chiclayo</small></div>
+      <div><b>@larenaclubperu</b><small>Instagram</small></div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="bar"><button id="bp" title="Presentar (P)">▶ Presentar</button><a href="Tu-Marca-Larena-League-Patrocinio.pdf" download>PDF</a></div>
+<div class="cnt" id="cnt"></div>
+<script>
+  // Láminas de 1920×1080: en modo lectura se apilan al ancho de la ventana;
+  // en modo presentación se muestra una a la vez, ajustada a la pantalla.
+  const S = [...document.querySelectorAll('.s')];
+  S.forEach(s => { const w = document.createElement('div'); w.className = 'wrapS'; s.parentNode.insertBefore(w, s); w.appendChild(s); });
+  let pres = false, i = 0;
+  function fit(){
+    if (pres){
+      const k = Math.min(innerWidth / 1920, innerHeight / 1080);
+      S.forEach(s => s.style.transform = `translate(-50%,-50%) scale(${k})`);
+      S.forEach(s => s.style.transformOrigin = 'center');
+    } else {
+      const k = Math.min(1, (innerWidth - (innerWidth < 700 ? 16 : 40)) / 1920);
+      S.forEach(s => { s.style.transformOrigin = 'top left'; s.style.transform = `scale(${k})`;
+        s.parentElement.style.width = 1920 * k + 'px'; s.parentElement.style.height = 1080 * k + 'px'; });
+    }
+  }
+  function ir(n){
+    i = Math.max(0, Math.min(S.length - 1, n));
+    S.forEach((s, k) => s.parentElement.classList.toggle('cur', k === i));
+    document.getElementById('cnt').textContent = String(i + 1).padStart(2, '0') + ' / ' + S.length;
+  }
+  function presentar(on){
+    pres = on; document.body.classList.toggle('pres', on);
+    document.getElementById('bp').classList.toggle('on', on);
+    document.getElementById('bp').textContent = on ? '✕ Salir' : '▶ Presentar';
+    if (on){
+      // arranca en la lámina que se estaba viendo
+      const y = innerHeight / 3; i = Math.max(0, S.findIndex(s => s.getBoundingClientRect().bottom > y));
+      ir(i); document.documentElement.requestFullscreen?.().catch(() => {});
+    } else if (document.fullscreenElement){ document.exitFullscreen(); }
+    fit();
+    if (!on) S[i].scrollIntoView({block: 'center'});
+  }
+  document.getElementById('bp').onclick = e => { e.stopPropagation(); presentar(!pres); };
+  addEventListener('keydown', e => {
+    if (e.key === 'p' || e.key === 'P') return presentar(!pres);
+    if (!pres) return;
+    if (['ArrowRight', 'ArrowDown', ' ', 'PageDown', 'Enter'].includes(e.key)){ e.preventDefault(); ir(i + 1); }
+    if (['ArrowLeft', 'ArrowUp', 'PageUp', 'Backspace'].includes(e.key)){ e.preventDefault(); ir(i - 1); }
+    if (e.key === 'Home') ir(0);
+    if (e.key === 'End') ir(S.length - 1);
+    if (e.key === 'Escape') presentar(false);
+  });
+  addEventListener('click', e => { if (pres && !e.target.closest('.bar')) ir(e.clientX < innerWidth / 3 ? i - 1 : i + 1); });
+  let x0 = null;
+  addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, {passive: true});
+  addEventListener('touchend', e => { if (!pres || x0 === null) return; const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) ir(dx < 0 ? i + 1 : i - 1); x0 = null; });
+  document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && pres) presentar(false); });
+  addEventListener('resize', fit); fit(); ir(0);
+</script>
+</body>
+</html>
